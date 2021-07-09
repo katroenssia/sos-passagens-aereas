@@ -1,54 +1,54 @@
 header {
-    background: var(--white);
-    box-shadow: var(--boxShadow);
-    width: 100vw;
-    position: fixed;
+  background: var(--white);
+  box-shadow: var(--boxShadow);
+  width: 100vw;
+  position: fixed;
 }
 
 .container-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
 }
 
 header img {
-    width: 100px;
-    height: 43px;
+  width: 100px;
+  height: 43px;
 }
 
 header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header ul li {
-    display: inline;
+  display: inline;
 }
 
 header ul li a {
-    padding: 8px 13px;
-    color: var(--red);
-    font-weight: 600;
-    font-size: 1.6rem;
-    text-decoration: none;
-    position: relative;
+  padding: 8px 13px;
+  color: var(--red);
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-decoration: none;
+  position: relative;
 }
 
 header ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    background: var(--blue);
-    height: 4px;
-    transition: all 200ms ease-in-out;
-    border-radius: 8px;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  background: var(--blue);
+  height: 4px;
+  transition: all 200ms ease-in-out;
+  border-radius: 8px;
 }
 
 header ul li a:hover::after {
-    width: 100%;
-    left: 0;
+  width: 100%;
+  left: 0;
 }
