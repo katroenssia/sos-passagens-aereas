@@ -42,25 +42,30 @@
 
 .hero-btns button {
     width: 200px;
-    padding: 16px 8px;
+    padding: 12px 4px;
     box-sizing: border-box;
-    border-radius: 8px;
-    font-size: 1.6rem;
+    border-radius: 16px;
 }
 
 .hero-btns button:nth-child(1) {
     border: 2px solid var(--red);
     background: linear-gradient(90deg, #AC1B2C 0%, rgba(226, 5, 31, 0.45) 100%);
-    border: 2px solid #A51614;
+    border: 1px solid var(--white);
 }
 
 .hero-btns button:nth-child(1) a, .hero-btns button:nth-child(2) a {
-    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 1px;
     color: var(--white);
+}
+.hero-btns button:nth-child(2) a{
+    color: #006d38;
 }
 
 .hero-btns button:nth-child(2) {
-    border: 2px solid var(--blue);
+    border: 1px solid var(--white);
     background: none;
 }
 
@@ -72,14 +77,13 @@
     box-shadow: var(--boxShadow);
     border-radius: 8px;
     height: 380px;
-
     overflow-y: hidden;
-
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.banner-hero div{
+
+.banner-hero div {
     width: 500px
 }
 
@@ -100,6 +104,7 @@
     font-weight: 600;
     text-shadow: var(--textShadow);
 }
+
 .banner-hero h3 span {
     color: var(--red);
 }
@@ -108,5 +113,5 @@
     position: relative;
     bottom: -15px;
     width: 308px;
-    height:358px;
+    height: 358px;
 }

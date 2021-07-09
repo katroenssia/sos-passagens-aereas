@@ -3,6 +3,7 @@ header {
   box-shadow: var(--boxShadow);
   width: 100vw;
   position: fixed;
+  z-index: 9999;
 }
 
 .container-header {
