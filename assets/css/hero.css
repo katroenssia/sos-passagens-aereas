@@ -1,12 +1,12 @@
-.container-hero{
+.container-hero {
     background-image: url(../image/banner-hero.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 570px;    
+    height: 570px;
 }
 
-.display-hero{
+.display-hero {
     position: relative;
     top: 72px;
     display: flex;
@@ -16,30 +16,97 @@
     height: 500px;
 }
 
-.display-hero h1{
+.display-hero h1 {
     color: var(--red);
     font-size: 4.4rem;
     font-weight: 600;
 }
-.display-hero h1 span{
+
+.display-hero h1 span {
     color: var(--blue);
 }
 
-.display-hero h2{
+.display-hero h2 {
     color: var(--white);
     font-size: 2.2rem;
     font-weight: 400;
-    text-shadow: var(--boxShadow);
+    text-shadow: var(--textShadow);
     max-width: 550px;
 }
 
-.hero-btns{
+.hero-btns {
+    margin-top: 24px;
     display: flex;
     gap: 16px;
 }
 
-.hero-btns button{
-    border-radius: 4px;
-    padding:8px 16px;
+.hero-btns button {
     width: 200px;
+    padding: 16px 8px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 1.6rem;
+}
+
+.hero-btns button:nth-child(1) {
+    border: 2px solid var(--red);
+    background: linear-gradient(90deg, #AC1B2C 0%, rgba(226, 5, 31, 0.45) 100%);
+    border: 2px solid #A51614;
+}
+
+.hero-btns button:nth-child(1) a, .hero-btns button:nth-child(2) a {
+    font-weight: 400;
+    color: var(--white);
+}
+
+.hero-btns button:nth-child(2) {
+    border: 2px solid var(--blue);
+    background: none;
+}
+
+.banner-hero {
+    max-width: 100%;
+    position: relative;
+    top: -60px;
+    background: linear-gradient(270deg, rgba(34, 103, 151, 0.87) 0%, rgba(41, 112, 142, 0.58) 100%);
+    box-shadow: var(--boxShadow);
+    border-radius: 8px;
+    height: 380px;
+
+    overflow-y: hidden;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.banner-hero div{
+    width: 550px
+}
+
+.banner-hero h2 {
+    color: var(--red);
+    font-size: 4.4rem;
+    font-weight: 600;
+    text-shadow: var(--textShadow);
+}
+
+.banner-hero h2 span {
+    color: var(--white);
+}
+
+.banner-hero h3 {
+    color: var(--white);
+    font-size: 2.6rem;
+    font-weight: 600;
+    text-shadow: var(--textShadow);
+}
+.banner-hero h3 span {
+    color: var(--red);
+}
+
+.banner-hero img {
+    position: relative;
+    bottom: -15px;
+    width: 308px;
+    height:358px;
 }
