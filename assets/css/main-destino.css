@@ -1,0 +1,63 @@
+#destinos {
+  margin: 100px 0px;
+}
+
+#destinos h2 {
+  font-size: 4.4rem;
+  color: var(--red);
+}
+#destinos h2 span {
+  color: var(--blue);
+}
+
+#destinos p {
+  font-size: 2.2rem;
+}
+
+#destinos .destinos-image-area {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+#destinos .destinos-image-area .card {
+  position: relative;
+  overflow: hidden;
+}
+
+#destinos .destinos-image-area .card span {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 10px 15px;
+  color: white;
+  font-size: 1.3rem;
+  background-color: rgba(0%, 0%, 0%, 0.7);
+}
+#destinos .destinos-image-area .card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+#destinos .destinos-image-area .card img:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
+}
+
+#destinos .destinos-image-area .card:nth-child(3) {
+  grid-column: 3/5;
+}
+#destinos .destinos-image-area .card:nth-child(3) img {
+  height: 100%;
+}
+
+#destinos .destinos-image-area .card:nth-child(5) {
+  grid-column: 2/4;
+}
+
+#destinos .destinos-image-area .card:nth-child(5) img {
+  height: 100%;
+}

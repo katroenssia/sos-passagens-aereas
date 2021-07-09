@@ -1,0 +1,33 @@
+#servicos {
+  height: 50vh;
+}
+#servicos h2 {
+  font-size: 4.4rem;
+  color: var(--blue);
+}
+#servicos h2 span {
+  color: var(--red);
+}
+#servicos .servicos-container {
+  padding: 50px 70px;
+  display: flex;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    to right,
+    rgba(34, 103, 151, 0.87),
+    rgba(41, 112, 142, 0.58)
+  );
+}
+#servicos .servicos-container ul {
+  margin: 15px;
+}
+
+#servicos .servicos-container ul li {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  line-height: 27px;
+  list-style-image: url(../svg/tag.svg);
+}
