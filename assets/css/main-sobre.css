@@ -1,0 +1,66 @@
+#sobre {
+  display: flex;
+
+  margin: 100px 0px;
+}
+#sobre {
+  display: flex;
+  flex-direction: row;
+}
+#sobre article {
+  flex: 1;
+}
+
+#sobre article h1 {
+  font-size: 4.4rem;
+  color: var(--red);
+}
+#sobre article h1 span {
+  color: var(--blue);
+}
+#sobre article p {
+  padding: 10px 0px;
+  width: 90%;
+  text-align: left;
+}
+
+#sobre a {
+  font-size: medium;
+  display: flex;
+  color: var(--red);
+  text-decoration: underline;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+#sobre a object {
+  margin-left: 10px;
+}
+
+#sobre .image-whous-area {
+  flex: 1;
+  display: grid;
+  grid-template-areas:
+    'foto1 foto2'
+    'foto3 foto2';
+  gap: 10px;
+}
+
+#sobre .image-whous-area .card-image {
+  width: 100%;
+}
+#sobre .image-whous-area .card-image:nth-child(1) {
+  grid-area: foto1;
+}
+#sobre .image-whous-area .card-image:nth-child(2) {
+  grid-area: foto2;
+}
+#sobre .image-whous-area .card-image:nth-child(3) {
+  grid-area: foto3;
+}
+
+#sobre .image-whous-area .card-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
