@@ -1,0 +1,16 @@
+#depoimentos {
+  margin: 100px 0px;
+}
+
+#depoimentos h1 {
+  font-size: 4.4rem;
+  color: var(--red);
+}
+
+#depoimentos h1 span {
+  color: var(--blue);
+}
+
+#depoimentos img {
+  width: 100%;
+}
