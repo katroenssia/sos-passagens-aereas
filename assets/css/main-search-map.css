@@ -1,0 +1,50 @@
+#search-map{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#search-map .display-search-map{
+    width: 50%
+}
+
+#search-map .map{
+    border: 1px solid var(--blue);
+    width: 450px;
+    height: 400px;
+}
+
+#search-map h2 {
+    font-size: 4.4rem;
+    color: var(--red);
+}
+
+#search-map h2 span {
+    color: var(--blue);
+}
+
+#search-map p {
+    font-size: 2.2rem;
+}
+
+#search-map select {
+    width: 340px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px var(--blue) solid;
+    display: block;
+    padding: 8px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--blue);
+    font-size: 1.6rem;
+}
+
+#search-map iframe {
+    border: none;
+    border-radius: 8px;
+    width: 500px;
+    height: 300px;
+}

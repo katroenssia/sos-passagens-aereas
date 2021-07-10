@@ -9,6 +9,7 @@
     <!-- folhas de estilos -->
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/main-search-map.css">
     <link rel="stylesheet" href="./assets/css/company-brand.css">
     <link rel="stylesheet" href="./assets/css/main-form.css">
     <link rel="stylesheet" href="./assets/css/main-sobre.css">
@@ -55,7 +56,8 @@
             <div class="display-banner-hero">
                 <h2>Perdeu <span>o Vôo?</span>
                 </h2>
-                <h3>A <span>SOS Passagens Aéreas</span> resolve! <br>Temos as melhores condições para vocês viajar com urgência!</h3>
+                <h3>A <span>SOS Passagens Aéreas</span> resolve! <br>Temos as melhores condições para vocês viajar com
+                    urgência!</h3>
             </div>
 
             <img src="./assets/image/man-travel.png" alt="homem com bagagem e passaporte nas mãos">
@@ -134,11 +136,14 @@
 
             <article>
                 <h1>Sobre <span>a empresa</span></h1>
-                <p>Empresa de turismo especializada em passagens aéreas de última hora. Atuando desde 2016 nos aeroportos brasileiros como suporte emergencial
+                <p>Empresa de turismo especializada em passagens aéreas de última hora. Atuando desde 2016 nos
+                    aeroportos brasileiros como suporte emergencial
                     aos passageiros.</p>
-                <p>Estamos em processo de expansão, atualmente estamos em 18 aeroportos brasileiros. Com central no Aeroporto Internacional de Belém, funcionando 24 horas por dia.</p>
+                <p>Estamos em processo de expansão, atualmente estamos em 18 aeroportos brasileiros. Com central no
+                    Aeroporto Internacional de Belém, funcionando 24 horas por dia.</p>
 
-                <a href="#">Ver todas as filiais <object data="./assets/svg/akar-icons_link-chain.svg" type=""></object></a>
+                <a href="#">Ver todas as filiais <object data="./assets/svg/akar-icons_link-chain.svg"
+                        type=""></object></a>
             </article>
             <div class="image-whous-area">
                 <div class="card-image">
@@ -154,15 +159,90 @@
 
         </section>
 
-        <section id="form">
+        <section id="form" class="container">
+            <h2>Cotação <span>sem compromisso</span></h2>
+            <p>Preencha o formulário abaixo, solicitando uma cotação, nós entraremos em contato com você imediatamente
+                para adentede-los com o melhor custo x benefício do mercado.</p>
+
+            <div class="form-container">
+                <form action="#">
+                    <label for="">Seu nome
+                        <input type="name" placeholder="Digite seu nome">
+                    </label>
+
+                    <label for="">Seu E-mail
+                        <input type="email" placeholder="Digite seu E-mail">
+                    </label>
+
+                    <label for="">Seu telefone
+                        <input type="phone" placeholder="ex: (xx) 99999-9999">
+                    </label>
+
+                    <label for="">Quantidade de pessoas
+                        <input type="number" value="1" min="1" max="12">
+                    </label>
+
+                    <label for="">Origem
+                        <input type="text" placeholder="ex: Belém">
+                    </label>
+
+                    <label for="">Destino
+                        <input type="text" placeholder="ex: Rio de Janeiro">
+                    </label>
+
+                    <button>Enviar Formulário</button>
+
+                </form>
+                <div>
+                    <img src="./assets/image/pink-girl.png" alt="mulher segurando o celular">
+                </div>
+            </div>
+        </section>
+
+        <section id="search-map" class="container">
+            <div class="display-search-map">
+                <h2>ou faça <span>uma visita</span></h2>
+                <p>Selecione a unidade mais próxima de você</p>
+                <select name="select" id="cidade">
+                    <option value="belem" selected>Belém</option>
+                    <option value="manaus">Manaus</option>
+                    <option value="fortaleza">Fortaleza</option>
+                    <option value="terezina">Terezina </option>
+                    <option value="natal">Natal</option>
+                    <option value="cuiaba">Cuiabá</option>
+                    <option value="campogrande">Campo Grande</option>
+                    <option value="vitoria">Vitória</option>
+                    <option value="campinas">Campinas</option>
+                    <option value="fozdoiguacu">Foz do Iguaçu</option>
+                    <option value="curitiba">Curitiba</option>
+                    <option value="joinville">Joinville</option>
+                    <option value="florianapolis">Florianópois</option>
+                    <option value="portoalegre">Porto Alegre</option>
+                    <option value="brasilia">Brasília</option>
+                    <option value="riobranco">Rio Brando</option>
+                </select>
+            </div>
+
+            <iframe id="mapa-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31908.61456315262!2d-48.47524600332434!3d-1.4293733655313807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a46669f5986e5f%3A0xe336db2d6ab189cc!2sBel%C3%A9m%20-%20PA!5e0!3m2!1spt-PT!2sbr!4v1625945508166!5m2!1spt-PT!2sbr"
+                allowfullscreen="" loading="lazy"></iframe>
 
         </section>
+
+        
 
     </main>
 
     <footer>
 
+
     </footer>
+
+    <script src="./assets/scripts/atualizaMapa.js">
+        
+
+
+    </script>
 
 </body>
 

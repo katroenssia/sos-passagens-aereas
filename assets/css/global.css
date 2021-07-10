@@ -51,7 +51,7 @@ p {
   max-width: 100%;
   margin-inline: auto;
   padding: 0 10px;
-  border: 1px dotted red;
+  /* border: 1px dotted red; */
 }
 main {
   width: 1090px;
