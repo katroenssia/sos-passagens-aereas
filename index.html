@@ -142,8 +142,7 @@
                 <p>Estamos em processo de expansão, atualmente estamos em 18 aeroportos brasileiros. Com central no
                     Aeroporto Internacional de Belém, funcionando 24 horas por dia.</p>
 
-                <a href="#">Ver todas as filiais <object data="./assets/svg/akar-icons_link-chain.svg"
-                        type=""></object></a>
+                <a href="#">Ver todas as filiais <object data="./assets/svg/akar-icons_link-chain.svg" type=""></object></a>
             </article>
             <div class="image-whous-area">
                 <div class="card-image">
@@ -167,30 +166,30 @@
             <div class="form-container">
                 <form action="#">
                     <label for="">Seu nome
-                        <input type="name" placeholder="Digite seu nome">
+                        <input type="text" placeholder="Digite seu nome" data-input-js="">
                     </label>
 
                     <label for="">Seu E-mail
-                        <input type="email" placeholder="Digite seu E-mail">
+                        <input type="email" placeholder="Digite seu E-mail" data-input-js="">
                     </label>
 
                     <label for="">Seu telefone
-                        <input type="phone" placeholder="ex: (xx) 99999-9999">
+                        <input id="telefone" type="phone" placeholder="ex: (xx) 99999-9999" maxlength="15" data-input-js="">
                     </label>
 
                     <label for="">Quantidade de pessoas
-                        <input type="number" value="1" min="1" max="12">
+                        <input type="number" value="1" min="1" max="12" data-input-js="">
                     </label>
 
                     <label for="">Origem
-                        <input type="text" placeholder="ex: Belém">
+                        <input type="text" placeholder="ex: Belém" data-input-js="">
                     </label>
 
                     <label for="">Destino
-                        <input type="text" placeholder="ex: Rio de Janeiro">
+                        <input type="text" placeholder="ex: Rio de Janeiro" data-input-js="">
                     </label>
 
-                    <button>Enviar Formulário</button>
+                    <button id="btn-form" type="submit">Enviar Formulário</button>
 
                 </form>
                 <div>
@@ -223,13 +222,11 @@
                 </select>
             </div>
 
-            <iframe id="mapa-iframe"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31908.61456315262!2d-48.47524600332434!3d-1.4293733655313807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a46669f5986e5f%3A0xe336db2d6ab189cc!2sBel%C3%A9m%20-%20PA!5e0!3m2!1spt-PT!2sbr!4v1625945508166!5m2!1spt-PT!2sbr"
-                allowfullscreen="" loading="lazy"></iframe>
+            <iframe id="mapa-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31908.61456315262!2d-48.47524600332434!3d-1.4293733655313807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a46669f5986e5f%3A0xe336db2d6ab189cc!2sBel%C3%A9m%20-%20PA!5e0!3m2!1spt-PT!2sbr!4v1625945508166!5m2!1spt-PT!2sbr" allowfullscreen="" loading="lazy"></iframe>
 
         </section>
 
-        
+
 
     </main>
 
@@ -239,11 +236,11 @@
     </footer>
 
     <script src="./assets/scripts/atualizaMapa.js">
-        
+
 
 
     </script>
-
+    <script src="./assets/scripts/validaFormulário.js"></script>
 </body>
 
 </html>
