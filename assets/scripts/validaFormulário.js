@@ -8,13 +8,29 @@ const form = document.forms[0].addEventListener('submit', (e) => {
 const checkingForms = () => {
   const inputs = document.querySelectorAll('[data-input-js]');
 
+  const canSubmit = () => {
+    let arrayInput = Array.from(inputs);
+
+    const haveError = arrayInput.some((item) => {
+      return item.classList.contains('error');
+    });
+    console.log(haveError);
+    if (!haveError) {
+      document.forms[0].submit();
+    }
+  };
+
   inputs.forEach((input) => {
     if (['undefined', 'null', ''].includes(input.value)) {
       input.style.border = '2px solid #df4040';
-      input.style.backgroundColor = '#e2d4d4';
+      input.style.transition = 'border 0.3s ease';
+      input.classList.add('error');
     } else {
       input.style.border = 'none';
-      input.style.backgroundColor = '#fff';
+
+      input.classList.remove('error');
+
+      canSubmit();
     }
   });
 };
