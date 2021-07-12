@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- folhas de estilos -->
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
@@ -37,10 +44,20 @@
                     <li> <a href="#unidades">Unidades</a> </li>
                     <li> <a href="#pacotes">Pacotes</a> </li>
                     <li> <a href="#contato">Contato</a> </li>
+
+                    <li id="pt-br">
+                        <img src="./assets/image/brazil.png" alt="bandeira do brasil">
+                    </li>
+                    <li id="en">
+                        <img src="./assets/image/united_kingdom_great_britain.png" alt="brandeira do reino unido">
+                    </li>
+                    <li id="es">
+                        <img src="./assets/image/spain.png" alt="bandeira da espanha">
+                    </li>
                 </ul>
 
             </nav>
-            <div class="languages">
+            <!-- <div class="languages">
                 <a href="">
                     <img src="./assets/image/brazil.png" alt="bandeira do brasil">
                 </a>
@@ -50,12 +67,12 @@
                 <a href="">
                     <img src="./assets/image/spain.png" alt="bandeira da espanha">
                 </a>
-            </div>
+            </div> -->
         </div>
     </header>
     <div class="container-hero" id="hero">
         <div class="container display-hero">
-            <h1>Não perca as <span>férias</span> </h1>
+            <h1>O melhor preço em <br><span>passagens aéreas.</span> </h1>
             <h2>Atuando desde 2016 nos aeroportos brasileiros como suporte emergencial aos passageiros.</h2>
             <div class="hero-btns">
                 <button> <a href="#"> Solicitar Cotação </a> </button>
@@ -66,9 +83,10 @@
     <div class="container">
         <div class="banner-hero">
             <div class="display-banner-hero">
-                <h2>Perdeu <span>o Vôo?</span>
+                <h2><strong> Perdeu o Vôo? </strong>
                 </h2>
-                <h3>A <span>SOS Passagens Aéreas</span> resolve! <br>Temos as melhores condições para vocês viajar com
+                <h3>A <strong>SOS Passagens Aéreas</strong> resolve! <br>Temos as melhores condições para vocês viajar
+                    com
                     urgência!</h3>
             </div>
 
@@ -78,11 +96,12 @@
     </div>
 
     <section class="empresas-aereas-parceiras">
-        <img src="./assets//image/brand-company-gol.png" alt="companhia aerea parceira gol">
         <img src="./assets//image/brand-company-azul.png" alt="companhia aerea parceira azul">
-        <img src=" ./assets//image/brand-company-latam.png" alt="companhia aerea parceira latam">
-        <img src="./assets//image/brand-company-gol.png" alt="companhia aerea parceira gol">
-        <img src="./assets//image/brand-company-azul.png" alt="companhia aerea parceira azul">
+        <img src=" ./assets/image/brand-company-itapemirim.png" alt="companhia aerea parceira itapemirim">
+        <img src="./assets/image/brand-company-gol.png" alt="companhia aerea parceira gol">
+        <img src=" ./assets/image/brand-company-tap.png" alt="companhia aerea parceira tap">
+        <img src=" ./assets/image/brand-company-voepass.png" alt="companhia aerea parceira voepass">
+        <img src="./assets/image/brand-company-latam.png" alt="companhia aerea parceira latam">
     </section>
 
     <main>
@@ -154,7 +173,8 @@
                 <p>Estamos em processo de expansão, atualmente estamos em 18 aeroportos brasileiros. Com central no
                     Aeroporto Internacional de Belém, funcionando 24 horas por dia.</p>
 
-                <a href="#">Ver todas as filiais <object data="./assets/svg/akar-icons_link-chain.svg" type=""></object></a>
+                <a href="#">Ver todas as filiais <object data="./assets/svg/akar-icons_link-chain.svg"
+                        type=""></object></a>
             </article>
             <div class="image-whous-area">
                 <div class="card-image">
@@ -172,7 +192,8 @@
 
         <section id="form" class="container">
             <h2>Cotação <span>sem compromisso</span></h2>
-            <p class="para-subtitle">Preencha o formulário abaixo, solicitando uma cotação, nós entraremos em contato com você imediatamente
+            <p class="para-subtitle">Preencha o formulário abaixo, solicitando uma cotação, nós entraremos em contato
+                com você imediatamente
                 para adentede-los com o melhor custo x benefício do mercado.</p>
 
             <div class="form-container">
@@ -189,7 +210,8 @@
 
                     <label for="">
                         <p class="para">Seu telefone</p>
-                        <input id="telefone" type="phone" placeholder="ex: (xx) 99999-9999" maxlength="15" data-input-js="">
+                        <input id="telefone" type="phone" placeholder="ex: (xx) 99999-9999" maxlength="15"
+                            data-input-js="">
                     </label>
 
                     <label for="">
@@ -245,7 +267,9 @@
                 </select>
             </div>
 
-            <iframe id="mapa-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31908.61456315262!2d-48.47524600332434!3d-1.4293733655313807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a46669f5986e5f%3A0xe336db2d6ab189cc!2sBel%C3%A9m%20-%20PA!5e0!3m2!1spt-PT!2sbr!4v1625945508166!5m2!1spt-PT!2sbr" allowfullscreen="" loading="lazy"></iframe>
+            <iframe id="mapa-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31908.61456315262!2d-48.47524600332434!3d-1.4293733655313807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a46669f5986e5f%3A0xe336db2d6ab189cc!2sBel%C3%A9m%20-%20PA!5e0!3m2!1spt-PT!2sbr!4v1625945508166!5m2!1spt-PT!2sbr"
+                allowfullscreen="" loading="lazy"></iframe>
 
         </section>
 
@@ -254,6 +278,68 @@
     </main>
 
     <footer>
+        <div class="container footer-grid">
+            <div>
+                <h2>Redes Sociais:</h2>
+                <a href="#">
+
+                    <img src="./assets/image/social-icons/facebook.svg" alt="facebook">
+                </a>
+
+                <a href="#">
+                    <img src="./assets/image/social-icons/instagram.svg" alt="instagram">
+                </a>
+                <br><br><br>
+                <h2>Certificado:</h2>
+                <img src="./assets/image/cadastur.png" alt="certificado cadastur">
+
+            </div>
+            <div>
+                <h2>Contato:</h2>
+                <p>lorem ipsum dolor sit am</p>
+                <p>lorem ipsum dolor sit am</p>
+
+            </div>
+            <div>
+                <h2>Informações:</h2>
+                <p>lorem ipsum dolor sit am</p>
+                <p>lorem ipsum dolor sit am</p>
+                <p>lorem ipsum dolor sit am</p>
+            </div>
+            <div>
+                <h2>Nossas Filiais:</h2>
+                <div>
+                    <p><a href="#">Belém</a></p>
+                    <p><a href="#">Manaus</a></p>
+                    <p><a href="#">Fortaleza</a></p>
+                    <p><a href="#">Terezina</a></p>
+                    <p><a href="#">Natal</a></p>
+                    <p><a href="#">Cuiabá</a></p>
+                    <p><a href="#">Vitória</a></p>
+                    <p><a href="#">Campinas</a></p>
+                    <p><a href="#">Curitiba</a></p>
+                    <p><a href="#">Joinville</a></p>
+                    <p><a href="#">Florianópois</a></p>
+                    <p><a href="#">Porto Alegre</a></p>
+                    <p><a href="#">Brasília</a></p>
+                    <p><a href="#">Campo Grande</a></p>
+                    <p><a href="#">Rio Branco</a></p>
+                    <p><a href="#">Foz do iguaçu</a></p>
+                </div>
+            </div>
+            <div>
+                <h2>Formas de pagamento:</h2>
+                <img src="./assets/image/cards-pay.png" alt="cartoes aceitos">
+            </div>
+
+
+        </div>
+        <div id="copy">
+            <h3>© 2021 | SOS AGÊNCIA DE VIAGENS E PASSAGENS AÉREAS LTDA | Todos os direitos reservados | Desenvolvido
+                por
+                <a href="#" target="_blank" >angeloricardo.tech</a>
+            </h3>
+        </div>
 
 
     </footer>
