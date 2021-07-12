@@ -53,3 +53,19 @@ header ul li a:hover::after {
   width: 100%;
   left: 0;
 }
+
+header .container-header .languages {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.7rem;
+}
+header .container-header .languages a {
+  display: flex;
+  flex-direction: column;
+}
+
+header .container-header .languages a img {
+  width: fit-content;
+  object-fit: cover;
+  padding: 0px 6px;
+}

@@ -38,13 +38,25 @@
                     <li> <a href="#pacotes">Pacotes</a> </li>
                     <li> <a href="#contato">Contato</a> </li>
                 </ul>
+
             </nav>
+            <div class="languages">
+                <a href="">
+                    <img src="./assets/image/brazil.png" alt="bandeira do brasil">
+                </a>
+                <a href="">
+                    <img src="./assets/image/united_kingdom_great_britain.png" alt="brandeira do reino unido">
+                </a>
+                <a href="">
+                    <img src="./assets/image/spain.png" alt="bandeira da espanha">
+                </a>
+            </div>
         </div>
     </header>
     <div class="container-hero" id="hero">
         <div class="container display-hero">
             <h1>Não perca as <span>férias</span> </h1>
-            <h2>Atuando desde 2016 nos aeroportos brasileiros como suporte emergencial aos passageiros</h2>
+            <h2>Atuando desde 2016 nos aeroportos brasileiros como suporte emergencial aos passageiros.</h2>
             <div class="hero-btns">
                 <button> <a href="#"> Solicitar Cotação </a> </button>
                 <button> <a href="#"> Whatsapp Business </a> </button>
@@ -74,7 +86,7 @@
     </section>
 
     <main>
-        <section id="destinos">
+        <section id="destinos" class="container">
             <h2>Destinos <span>em Destaques</span></h2>
             <p>Separamos alguns dos destinos mais populares para você já preparar a próxima viagem!</p>
             <div class="destinos-image-area">
@@ -96,7 +108,7 @@
                 </div>
                 <div class="card">
                     <img src="./assets/image/card-italia.png" alt="pais italia">
-                    <span>Italia</span>
+                    <span>Itália</span>
                 </div>
                 <div class="card">
                     <img src="./assets/image/card-espanha.png" alt="pais espanha">
@@ -106,7 +118,7 @@
             </div>
         </section>
 
-        <section id="servicos">
+        <section id="servicos" class="container">
             <h2>Nossos <span>Serviços</span></h2>
             <div class="servicos-container">
                 <ul>
@@ -125,12 +137,12 @@
             </div>
         </section>
 
-        <section id="depoimentos">
+        <section id="depoimentos" class="container">
             <h1>Depoimentos <span>de clientes</span></h1>
             <img src="./assets/image/Group 12.png" alt="">
         </section>
 
-        <section id="sobre">
+        <section id="sobre" class="container">
 
 
 
@@ -160,33 +172,44 @@
 
         <section id="form" class="container">
             <h2>Cotação <span>sem compromisso</span></h2>
-            <p>Preencha o formulário abaixo, solicitando uma cotação, nós entraremos em contato com você imediatamente
+            <p class="para-subtitle">Preencha o formulário abaixo, solicitando uma cotação, nós entraremos em contato com você imediatamente
                 para adentede-los com o melhor custo x benefício do mercado.</p>
 
             <div class="form-container">
                 <form action="#">
-                    <label for="">Seu nome
+                    <label for="">
+                        <p class="para">Seu nome</p>
                         <input type="text" placeholder="Digite seu nome" data-input-js="">
                     </label>
 
-                    <label for="">Seu E-mail
+                    <label for="">
+                        <p class="para">Seu E-mail</p>
                         <input type="email" placeholder="Digite seu E-mail" data-input-js="">
                     </label>
 
-                    <label for="">Seu telefone
+                    <label for="">
+                        <p class="para">Seu telefone</p>
                         <input id="telefone" type="phone" placeholder="ex: (xx) 99999-9999" maxlength="15" data-input-js="">
                     </label>
 
-                    <label for="">Quantidade de pessoas
+                    <label for="">
+                        <p class="para">Quantidade de pessoas</p>
                         <input type="number" value="1" min="1" max="12" data-input-js="">
                     </label>
 
-                    <label for="">Origem
+                    <label for="">
+                        <p class="para">Origem</p>
                         <input type="text" placeholder="ex: Belém" data-input-js="">
                     </label>
 
-                    <label for="">Destino
+                    <label for="">
+                        <p class="para">Destino</p>
                         <input type="text" placeholder="ex: Rio de Janeiro" data-input-js="">
+                    </label>
+
+                    <label for="">
+                        <p class="para">Data da Viagem</p>
+                        <input type="date" data-input-js="">
                     </label>
 
                     <button id="btn-form" type="submit">Enviar Formulário</button>
@@ -235,12 +258,14 @@
 
     </footer>
 
-    <script src="./assets/scripts/atualizaMapa.js">
+    <script type="text/javascript" src="./assets/scripts/atualizaMapa.js">
 
 
 
     </script>
-    <script src="./assets/scripts/validaFormulário.js"></script>
+    <script type="text/javascript" src="./assets/scripts/validaFormulário.js"></script>
+
+    <script type="text/javascript" src="./assets/scripts/trocaIdioma.js"></script>
 </body>
 
 </html>

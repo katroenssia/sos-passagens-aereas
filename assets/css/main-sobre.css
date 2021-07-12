@@ -1,11 +1,7 @@
 #sobre {
   display: flex;
-
-  margin: 100px 0px;
-}
-#sobre {
-  display: flex;
   flex-direction: row;
+  margin: 100px auto;
 }
 #sobre article {
   flex: 1;
