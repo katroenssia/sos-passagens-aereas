@@ -88,26 +88,19 @@
 }
 
 .banner-hero h2 {
-    color: var(--red);
+    color: var(--white);
     font-size: 4.4rem;
     font-weight: 600;
     text-shadow: var(--textShadow);
 }
 
-.banner-hero h2 span {
-    color: var(--white);
-}
-
 .banner-hero h3 {
     color: var(--white);
     font-size: 2.6rem;
-    font-weight: 600;
+    font-weight: 300;
     text-shadow: var(--textShadow);
 }
 
-.banner-hero h3 span {
-    color: var(--red);
-}
 
 .banner-hero img {
     position: relative;
