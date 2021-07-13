@@ -56,8 +56,6 @@ header ul li a:hover::after {
 
 header .container-header .languages {
   display: flex;
-  flex-direction: row;
-  font-size: 1.7rem;
 }
 header .container-header .languages a {
   display: flex;
