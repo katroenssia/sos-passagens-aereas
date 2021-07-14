@@ -64,6 +64,11 @@ header nav ul li img:hover{
   transform: scale(1.1);
 }
 
+@media (max-width: 800px) {
+  nav ul{
+    display: none;
+  }
+}
 
 
 /* header .container-header nav {

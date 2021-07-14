@@ -1,5 +1,5 @@
 #servicos {
-  margin: 100px auto;
+  margin: 60px auto;
 }
 #servicos h2 {
   font-size: 4.4rem;
@@ -11,6 +11,7 @@
 #servicos .servicos-container {
   padding: 50px 70px;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
   border-radius: 8px;

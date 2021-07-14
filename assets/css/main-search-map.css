@@ -1,14 +1,12 @@
 #search-map{
-    margin-top: 70px;
+    margin-top: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
-#search-map .display-search-map{
-    width: 50%
-}
 
 #search-map .map{
     border: 1px solid var(--blue);
@@ -45,6 +43,18 @@
 #search-map iframe {
     border: none;
     border-radius: 8px;
+    max-width: 100%;
     width: 500px;
     height: 300px;
+}
+
+@media (max-width: 800px){
+
+    #search-map{
+        justify-content: center;
+    }
+    
+    #search-map h2, #search-map p{
+        text-align: center;
+    }
 }
