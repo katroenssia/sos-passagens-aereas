@@ -10,8 +10,7 @@
     <!-- google-fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- folhas de estilos -->
     <link rel="stylesheet" href="./assets/css/global.css">
@@ -38,18 +37,20 @@
                 <img src="./assets/image/logo.png" alt="logo s o s passagens aéreas">
             </a>
             <nav>
-                <ul>
-                    <li> <a href="#sobre">Sobre</a> </li>
-                    <li> <a href="#passagens">Passagens</a> </li>
-                    <li> <a href="#unidades">Unidades</a> </li>
-                    <li> <a href="#pacotes">Pacotes</a> </li>
-                    <li> <a href="#contato">Contato</a> </li>
+                <ul id="menu">
+                    <li> <a href="#sobre" data-menu>Sobre</a> </li>
+                    <li> <a href="#passagens" data-menu>Passagens</a> </li>
+                    <li> <a href="#unidades" data-menu>Unidades</a> </li>
+                    <li> <a href="#pacotes" data-menu>Pacotes</a> </li>
+                    <li> <a href="#contato" data-menu>Contato</a> </li>
 
                     <li id="pt-br">
-                        <img src="./assets/image/brazil.png" alt="bandeira do brasil">
+
+                        <img id="es-img" src="./assets/image/brazil.png" alt="bandeira do brasil">
+
                     </li>
                     <li id="en">
-                        <img src="./assets/image/united_kingdom_great_britain.png" alt="brandeira do reino unido">
+                        <img id="en-img" src="./assets/image/united_kingdom_great_britain.png" alt="brandeira do reino unido">
                     </li>
                     <li id="es">
                         <img src="./assets/image/spain.png" alt="bandeira da espanha">
@@ -72,20 +73,20 @@
     </header>
     <div class="container-hero" id="hero">
         <div class="container display-hero">
-            <h1>O melhor preço em <br><span>passagens aéreas.</span> </h1>
-            <h2>Atuando desde 2016 nos aeroportos brasileiros como suporte emergencial aos passageiros.</h2>
+            <h1 data-hero>O melhor preço em <br><span>passagens aéreas.</span> </h1>
+            <h2 data-hero>Atuando desde 2016 nos aeroportos brasileiros como suporte emergencial aos passageiros.</h2>
             <div class="hero-btns">
-                <button> <a href="#"> Solicitar Cotação </a> </button>
-                <button> <a href="#"> Whatsapp Business </a> </button>
+                <button> <a href="#" data-hero> Solicitar Cotação </a> </button>
+                <button> <a href="#" data-hero> Whatsapp Business </a> </button>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="banner-hero">
             <div class="display-banner-hero">
-                <h2><strong> Perdeu o Vôo? </strong>
+                <h2 data-banner><strong> Perdeu o Vôo? </strong>
                 </h2>
-                <h3>A <strong>SOS Passagens Aéreas</strong> resolve! <br>Temos as melhores condições para vocês viajar
+                <h3 data-banner>A <strong>SOS Passagens Aéreas</strong> resolve! <br>Temos as melhores condições para vocês viajar
                     com
                     urgência!</h3>
             </div>
@@ -106,32 +107,32 @@
 
     <main>
         <section id="destinos" class="container">
-            <h2>Destinos <span>em Destaques</span></h2>
-            <p>Separamos alguns dos destinos mais populares para você já preparar a próxima viagem!</p>
+            <h2 data-destinos>Destinos <span>em Destaques</span></h2>
+            <p data-destinos>Separamos alguns dos destinos mais populares para você já preparar a próxima viagem!</p>
             <div class="destinos-image-area">
                 <div class="card">
                     <img src="./assets/image/card-novaiorque.png" alt="Pais estados unidos">
-                    <span>Estados Unidos</span>
+                    <span data-destinos>Estados Unidos</span>
                 </div>
                 <div class="card">
                     <img src="./assets/image/card-franca.png" alt=" pais frança">
-                    <span>França</span>
+                    <span data-destinos>França</span>
                 </div>
                 <div class="card">
                     <img src="./assets/image/card-japao.png" alt="pais japão">
-                    <span>Japão</span>
+                    <span data-destinos>Japão</span>
                 </div>
                 <div class="card">
                     <img src="./assets/image/card-portugal.png" alt="pais portugal">
-                    <span>Portugal</span>
+                    <span data-destinos>Portugal</span>
                 </div>
                 <div class="card">
                     <img src="./assets/image/card-italia.png" alt="pais italia">
-                    <span>Itália</span>
+                    <span data-destinos>Itália</span>
                 </div>
                 <div class="card">
                     <img src="./assets/image/card-espanha.png" alt="pais espanha">
-                    <span>Espanha</span>
+                    <span data-destinos>Espanha</span>
                 </div>
 
             </div>
@@ -173,8 +174,7 @@
                 <p>Estamos em processo de expansão, atualmente estamos em 18 aeroportos brasileiros. Com central no
                     Aeroporto Internacional de Belém, funcionando 24 horas por dia.</p>
 
-                <a href="#">Ver todas as filiais <object data="./assets/svg/akar-icons_link-chain.svg"
-                        type=""></object></a>
+                <a href="#">Ver todas as filiais <object data="./assets/svg/akar-icons_link-chain.svg" type=""></object></a>
             </article>
             <div class="image-whous-area">
                 <div class="card-image">
@@ -210,8 +210,7 @@
 
                     <label for="">
                         <p class="para">Seu telefone</p>
-                        <input id="telefone" type="phone" placeholder="ex: (xx) 99999-9999" maxlength="15"
-                            data-input-js="">
+                        <input id="telefone" type="phone" placeholder="ex: (xx) 99999-9999" maxlength="15" data-input-js="">
                     </label>
 
                     <label for="">
@@ -267,9 +266,7 @@
                 </select>
             </div>
 
-            <iframe id="mapa-iframe"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31908.61456315262!2d-48.47524600332434!3d-1.4293733655313807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a46669f5986e5f%3A0xe336db2d6ab189cc!2sBel%C3%A9m%20-%20PA!5e0!3m2!1spt-PT!2sbr!4v1625945508166!5m2!1spt-PT!2sbr"
-                allowfullscreen="" loading="lazy"></iframe>
+            <iframe id="mapa-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31908.61456315262!2d-48.47524600332434!3d-1.4293733655313807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a46669f5986e5f%3A0xe336db2d6ab189cc!2sBel%C3%A9m%20-%20PA!5e0!3m2!1spt-PT!2sbr!4v1625945508166!5m2!1spt-PT!2sbr" allowfullscreen="" loading="lazy"></iframe>
 
         </section>
 
@@ -337,7 +334,7 @@
         <div id="copy">
             <h3>© 2021 | SOS AGÊNCIA DE VIAGENS E PASSAGENS AÉREAS LTDA | Todos os direitos reservados | Desenvolvido
                 por
-                <a href="#" target="_blank" >angeloricardo.tech</a>
+                <a href="#" target="_blank">angeloricardo.tech</a>
             </h3>
         </div>
 
@@ -351,7 +348,7 @@
     </script>
     <script type="text/javascript" src="./assets/scripts/validaFormulário.js"></script>
 
-    <script type="text/javascript" src="./assets/scripts/trocaIdioma.js"></script>
+    <script defer type="text/javascript" src="./assets/scripts/trocaIdioma.js"></script>
 </body>
 
 </html>

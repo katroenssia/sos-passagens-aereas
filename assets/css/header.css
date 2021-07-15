@@ -16,11 +16,17 @@ header {
 header img {
   width: 100px;
   height: 43px;
+  cursor: pointer;
 }
 
 header nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
   align-items: center;
 }
 
@@ -58,8 +64,13 @@ header .container-header .languages {
   display: flex;
 }
 
+header nav ul li img {
+  transition: transform 0.4s ease;
+}
+
 header nav ul li img:hover {
   transform: scale(1.1);
+  transition: transform 0.4s ease;
 }
 
 /* header .container-header nav {

@@ -1,21 +1,21 @@
 {
   "navbar": {
-    "sobre": "Who us",
-    "Passagens": "Tickets",
-    "Unidades": "Subsidiary",
-    "Pacotes": "Travel packages",
-    "Contato": "Contacts"
+    "sobre": "quienes somos",
+    "Passagens": "Entradas",
+    "Unidades": "sucursales",
+    "Pacotes": "Paquete de Viaje",
+    "Contato": "contactos"
   },
   "hero": {
-    "h1": "The best price at<br> <span>air tickets</span>",
-    "h2": "Working since 2016 at Brazilian airports as emergency support to passengers.",
-    "button1": "Request Quote",
-    "button2": "Whatsapp Business"
+    "h1": "el mejor precio para los<br> <span>billetes de avión</span>",
+    "h2": "Trabajando desde 2016 en los aeropuertos brasileños como apoyo de emergencia a los pasajeros.",
+    "button1": "Solicitud de cotización",
+    "button2": "Whatsapp empresa"
   },
 
   "banner": {
-    "banner_h2": "Lost <span>the fly?</span>",
-    "banner_h3": "The <span>SOS Air Tickets</span> resolve! <br>Have the best condition to urgency travel!"
+    "banner_h2": "perdí <span>tel vuelo?</span>",
+    "banner_h3": "<span>¡SOS Air Tickets </span>lo resuelve!<br> ¡Tenemos las mejores condiciones para que viajes de urgencia!"
   },
 
   "destinos": {
