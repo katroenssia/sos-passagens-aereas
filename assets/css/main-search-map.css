@@ -1,16 +1,17 @@
-#search-map{
-    margin-top: 70px;
+#search-map {
+    margin-top: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
-#search-map .display-search-map{
-    width: 50%
+.display-search-map {
+    max-width: 540px;
 }
 
-#search-map .map{
+#search-map .map {
     border: 1px solid var(--blue);
     width: 450px;
     height: 400px;
@@ -29,6 +30,12 @@
     font-size: 2.2rem;
 }
 
+#endereco-map{
+    margin-top: 16px;
+    font-size: 1.6rem;
+    color: var(--blue);
+}
+
 #search-map select {
     width: 340px;
     height: 40px;
@@ -45,6 +52,16 @@
 #search-map iframe {
     border: none;
     border-radius: 8px;
+    max-width: 100%;
     width: 500px;
     height: 300px;
+}
+
+@media (max-width: 800px) {
+    #search-map {
+        justify-content: center;
+    }
+    #search-map h2, #search-map p {
+        text-align: center;
+    }
 }

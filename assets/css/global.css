@@ -11,11 +11,7 @@
   --blue: #226797;
   --gray: #879395;
   --backgroundSolidColor: #6da9cd;
-  --backgroundGradientColor: linear-gradient(
-    270deg,
-    rgba(34, 103, 151, 0.87) -10.5%,
-    rgba(41, 112, 142, 0.58) 89.5%
-  );
+  --backgroundGradientColor: linear-gradient( 270deg, rgba(34, 103, 151, 0.87) -10.5%, rgba(41, 112, 142, 0.58) 89.5%);
   --boxShadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   --textShadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -26,6 +22,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  /* border: 1px solid red; */
 }
 
 html {
@@ -52,4 +49,22 @@ p {
   margin-inline: auto;
   padding: 0 10px;
   /* border: 1px dotted red; */
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 52.4%;
+  }
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding: 0 20px;
+  }
+  h1, h2, h3, h4, h5, h6, p, a {
+    text-align: center;
+  }
 }
