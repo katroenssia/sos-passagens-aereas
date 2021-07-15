@@ -36,9 +36,17 @@
   color: var(--blue);
   font-size: 2rem;
   text-align: center;
-  margin: 15px 0px;
+  /* margin: 10px 0px; */
 }
 
 #servicos .services-container .card-services .services-text p {
   text-align: center;
 }
+
+/* ajuste fino */
+.image-area img{
+  width: 60px;
+  margin: 16px 0;
+}
+
+
