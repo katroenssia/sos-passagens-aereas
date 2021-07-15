@@ -61,3 +61,29 @@
 #destinos .destinos-image-area .card:nth-child(5) img {
   height: 100%;
 }
+
+@media screen and (max-width: 900px) {
+  #destinos .destinos-image-area {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #destinos .destinos-image-area .card:nth-child(3) {
+    grid-column: 3;
+  }
+  #destinos .destinos-image-area .card:nth-child(3) img {
+    height: 100%;
+  }
+
+  #destinos .destinos-image-area .card:nth-child(5) {
+    grid-column: 2;
+  }
+
+  #destinos .destinos-image-area .card:nth-child(5) img {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #destinos .destinos-image-area {
+    grid-template-columns: 1fr;
+  }
+}

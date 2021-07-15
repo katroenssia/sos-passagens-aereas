@@ -27,6 +27,7 @@
   text-decoration: underline;
   font-weight: 500;
   margin-top: 30px;
+  width: fit-content;
 }
 
 #sobre a object {
@@ -59,4 +60,28 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  #sobre {
+    flex-direction: column;
+  }
+
+  #sobre article h1 {
+    color: var(--red);
+    text-align: center;
+  }
+
+  #sobre article p {
+    text-align: center;
+  }
+
+  #sobre a {
+    font-size: medium;
+    display: flex;
+    color: var(--red);
+    text-decoration: underline;
+    font-weight: 500;
+    margin: 15px 0px;
+  }
 }
