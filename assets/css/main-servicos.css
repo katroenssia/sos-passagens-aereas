@@ -8,27 +8,37 @@
 #servicos h2 span {
   color: var(--red);
 }
-#servicos .servicos-container {
-  padding: 50px 70px;
-  display: flex;
+#servicos .services-container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  background-image: linear-gradient(
-    to right,
-    rgba(34, 103, 151, 0.87),
-    rgba(41, 112, 142, 0.58)
-  );
-}
-#servicos .servicos-container ul {
-  margin: 15px;
+  gap: 40px;
 }
 
-#servicos .servicos-container ul li {
-  color: white;
+#servicos .services-container .card-services {
+}
+
+#servicos .services-container .card-services .image-area {
+  display: flex;
+  justify-content: center;
+}
+
+#servicos .services-container .card-services .image-area img {
+}
+
+#servicos .services-container .card-services .services-text {
+}
+
+#servicos .services-container .card-services .services-text h4 {
+  color: var(--blue);
   font-size: 2rem;
-  margin-bottom: 15px;
-  line-height: 27px;
-  list-style-image: url(../svg/tag.svg);
+  text-align: center;
+  margin: 15px 0px;
+}
+
+#servicos .services-container .card-services .services-text p {
+  text-align: center;
 }
