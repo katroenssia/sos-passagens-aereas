@@ -4,6 +4,7 @@
 #servicos h2 {
   font-size: 4.4rem;
   color: var(--blue);
+  text-shadow: var(--textShadowSection);
 }
 #servicos h2 span {
   color: var(--red);

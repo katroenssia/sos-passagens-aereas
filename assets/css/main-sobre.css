@@ -10,6 +10,7 @@
 #sobre article h1 {
   font-size: 4.4rem;
   color: var(--red);
+  text-shadow: var(--textShadowSection);
 }
 #sobre article h1 span {
   color: var(--blue);

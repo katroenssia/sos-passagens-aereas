@@ -1,6 +1,7 @@
 #form h2 {
   font-size: 4.4rem;
   color: var(--red);
+  text-shadow: var(--textShadowSection);
 }
 
 #form h2 span {
