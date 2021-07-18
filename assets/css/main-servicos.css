@@ -70,4 +70,7 @@
     max-width: 100%;
     padding: 20px;
   }
+  #servicos h2 {
+    font-size: var(--textHeaderMobileSize);
+  }
 }

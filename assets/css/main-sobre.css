@@ -86,3 +86,12 @@
     margin: 15px 0px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  #sobre article h1 {
+    font-size: var(--textHeaderMobileSize);
+  }
+  #sobre article p {
+    width: 100%;
+  }
+}

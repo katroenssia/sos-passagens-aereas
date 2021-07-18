@@ -84,6 +84,12 @@
 }
 
 @media screen and (max-width: 600px) {
+  #destinos h2 {
+    font-size: var(--textHeaderMobileSize);
+  }
+  #destinos p {
+    font-size: 1.8rem;
+  }
   #destinos .destinos-image-area {
     grid-template-columns: 1fr;
   }
