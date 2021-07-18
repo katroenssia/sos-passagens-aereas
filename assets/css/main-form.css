@@ -123,4 +123,14 @@ button {
   .form-container form label .para {
     text-align: left;
   }
+  .form-container form label {
+    width: 100%;
+  }
+  .form-container form label input {
+    width: 100%;
+  }
+  .form-container form {
+    max-width: none;
+    width: 100%;
+  }
 }
