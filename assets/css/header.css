@@ -60,13 +60,21 @@ header ul li a:hover::after {
   left: 0;
 }
 
-header .container-header .languages {
-  display: flex;
+header nav ul li:nth-child(6) img,
+header nav ul li:nth-child(7) img,
+header nav ul li:nth-child(8) img {
+  width: 24px;
+  height: 17.2px;
+  cursor: pointer;
 }
 
-header nav ul li img {
+/* header .container-header .languages {
+  display: flex;
+} */
+
+/* header nav ul li img {
   transition: transform 0.4s ease;
-}
+} */
 
 header nav ul li img:hover {
   transform: scale(1.1);
