@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            font-family: 'Poppins';
+            max-width: 600px;
+            font-size: 12px;
+        }
+
+        li {
+            list-style: none;
+            padding: 10px;
+        }
+
+        ul {
+            padding: 20px;
+        }
+
+        .info-client {
+            display: flex;
+            justify-content: center;
+        }
+
+        .info-client ul li strong {
+            color: #226797;
+        }
+
+        main h1 {
+            text-align: center;
+            font-weight: 400;
+            color: #AC1B2C;
+        }
+
+        main small {
+            color: #8E8E8E;
+            width: 100%;
+            text-align: center;
+            margin: 40px;
+
+
+
+        }
+
+        footer {
+            height: 100px;
+            background-color: #226797;
+            width: 600px;
+        }
+
+        footer .copywriting {
+
+            text-align: center;
+        }
+
+        footer .copywriting p {
+            font-size: 14px;
+            color: white;
+
+        }
+
+        @media screen and (max-width:500px){
+            html,body{
+                font-size: 12px;
+            }
+            .info-client {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            }
+            footer{
+                font-size: 12px;
+                max-width: 600px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="logo">
+                <img src="https://i.imgur.com/OR8NiyJ.png" alt="logo sos passagens aereas">
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>informações do cliente</h1>
+
+        <section class="info-client">
+            <ul>
+                <li>
+                    <strong>Nome:</strong>
+                    <p>{{name}}</p>
+                </li>
+                <li><strong>Email:</strong>
+                    <p>{{email}}</p>
+                </li>
+                <li>
+                    <strong>celular:</strong>
+                    <p id="phone">{{phone}}</p>
+                    <a style=" color:#34af23;" href="https://api.whatsapp.com/send?phone=55{{phone}}&text=SOS Passagens Aereas Emergenciais | Faça contato.">whatsapp</a>
+                </li>
+                <li>
+                    <strong>Data da Viagem:</strong>
+                    <p>{{datatravel}}</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <strong>Origem</strong>
+                    <p>{{origin}}</p>
+                </li>
+                <li>
+                    <strong>Destino</strong>
+                    <p>{{destiny}}</p>
+                </li>
+                <li>
+                    <strong>Quantidade de pessoas:</strong>
+                    <p>{{people}}</p>
+                </li>
+            </ul>
+
+        </section>
+        <small>Formulário Preenchido pelo cliente através do website.</small>
+    </main>
+    <footer>
+        <div class="copywriting">
+            <p>SOS PASSAGENS AÉREAS LTDA | Todos os direitos reservados</p>
+        </div>
+    </footer>
+   
+
+</body>
+
+</html>

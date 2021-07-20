@@ -1,11 +1,11 @@
 #depoimentos {
-  margin: 100px auto;
+  margin: 0 auto;
+  text-shadow: var(--textShadowSection);
 }
 
 #depoimentos h1 {
   font-size: 4.4rem;
   color: var(--red);
-  text-shadow: var(--textShadowSection);
 }
 
 #depoimentos h1 span {
@@ -14,89 +14,4 @@
 
 #depoimentos img {
   width: 100%;
-}
-
-#depoimentos .card-depoiments-area {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-#depoimentos .card-depoiments-area .card-depoiments {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  max-width: 30%;
-  min-width: 250px;
-  padding: 20px;
-  box-shadow: var(--boxShadow);
-  border-radius: 8px;
-}
-
-#depoimentos .card-depoiments-area .card-depoiments .quote {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  height: 50px;
-}
-
-#depoimentos .card-depoiments-area .card-depoiments h4 {
-  font-size: 2rem;
-  color: #313131;
-}
-
-#depoimentos .card-depoiments-area .card-depoiments img {
-  display: flex;
-  height: 76px;
-  width: 76px;
-}
-
-#depoimentos .card-depoiments-area .card-depoiments .stars {
-}
-#depoimentos .card-depoiments-area .card-depoiments .stars object {
-}
-
-#depoimentos .card-depoiments-area .card-depoiments p {
-  text-align: center;
-}
-
-@media screen and (max-width: 800px) {
-  #depoimentos .card-depoiments-area {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-  #depoimentos .card-depoiments-area .card-depoiments {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    max-width: 30%;
-    justify-content: space-around;
-    padding: 20px;
-    box-shadow: var(--boxShadow);
-    border-radius: 8px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  #depoimentos h1 {
-    font-size: var(--textHeaderMobileSize);
-    color: var(--red);
-    text-shadow: var(--textShadowSection);
-  }
-  #depoimentos .card-depoiments-area .card-depoiments {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    position: relative;
-    max-width: 100%;
-    margin: 15px 0px;
-    padding: 20px;
-    box-shadow: var(--boxShadow);
-    border-radius: 8px;
-  }
 }
