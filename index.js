@@ -22,7 +22,7 @@ app.post('/', (req, res) => {
     const date = new Date(datatravel).toLocaleDateString('pt-BR');
     return date;
   }
-  let src = 'https://imgur.com/OR8NiyJ';
+
   var transport = nodemailer.createTransport({
     service: 'gmail',
 
@@ -61,7 +61,6 @@ app.post('/', (req, res) => {
       origin,
       destiny,
       datatravel: formatDate(),
-      src,
     },
   };
 
