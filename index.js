@@ -28,8 +28,8 @@ app.post('/', (req, res) => {
 
     port: 465,
     auth: {
-      user: 'arthurnmrocha@gmail.com',
-      pass: '1995131313',
+      user: process.env.SMTP_EMAIL,
+      pass: process.env.SMTP_PASS,
     },
   });
 
