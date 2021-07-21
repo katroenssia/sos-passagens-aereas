@@ -21,8 +21,10 @@
 
 .display-hero h1 {
     color: var(--red);
-    font-size: 4.4rem;
-    font-weight: 600;
+    line-height: 1.2;
+    font-size: 6.6rem;
+    font-weight: 800;
+    text-shadow:  0 0 4px rgba( 240, 248, 255, 1 );
 }
 
 .display-hero h1 span {
@@ -80,9 +82,9 @@
 .banner-hero {
     max-width: 100%;
     position: relative;
-    top: -60px;
+    top: -44px;
     background: linear-gradient(270deg, rgba(34, 103, 151, 0.87) 0%, rgba(41, 112, 142, 0.58) 100%);
-    box-shadow: var(--boxShadow);
+    box-shadow:0 16px 32px 16px rgba(0, 0, 0, 10%);
     border-radius: 8px;
     height: 380px;
     overflow-y: hidden;
@@ -118,6 +120,10 @@
 }
 
 @media (max-width:800px) {
+    .display-hero h1 {        
+        text-shadow:  0 0 16px rgba( 240, 248, 255, 1 );
+    }
+    
     .display-hero {
         align-items: center;
     }
