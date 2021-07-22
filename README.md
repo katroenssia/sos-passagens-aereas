@@ -17,3 +17,15 @@ observações:
 - agora o projeto está sendo serviço pelo backend
 - o caminho da pasta ./assets agora é estático, por isso deve ser tirado.
   ex: './assets/css/hero.css' para './css/hero.css'
+
+### diferenças entre os scripts `npm start` e `npm run dev`.
+
+#### npm run dev
+
+- deve ser usado em ambiente de desenvolvimento,
+- pois há um script(lib nodemon) ao salvar o projeto ele renicia o servidor,
+
+#### npm start
+
+- depois que o projeto for hospedado, devemos ir na pasta do projeto dentro da hospedagem,
+- e roda esse comando para ligar o node e criar o servidor.

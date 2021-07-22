@@ -15,3 +15,62 @@
 #depoimentos img {
   width: 100%;
 }
+
+.wrapper_depositions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 44px 0;
+}
+
+.depositions {
+  flex: 1;
+  min-width: 270px;
+  height: 305px;
+
+}
+
+.wrapper_depositions .depositions:nth-child(1) {
+  background-image: url(../image/depositions/banner_dp0.png);
+  background-size: cover;
+  position: relative;
+}
+
+.wrapper_depositions .depositions:nth-child(2) {
+  background-image: url(../image/depositions/banner_dp1.png);
+  background-size: cover;
+}
+
+.wrapper_depositions .depositions:nth-child(3) {
+  background-image: url(../image/depositions/banner_dp2.png);
+  background-size: cover;
+}
+
+.depositions_text {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  transition: all 0.2s;
+}
+.depositions_text:hover {
+  background: #5c5c5c9a;
+}
+
+.depositions_text h3{
+  padding: 16px;
+  font-size: 2.2rem;
+  font-weight:600;
+  color: var(--white);
+  text-align: center;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.depositions_text:hover h3{
+  opacity: 1;
+}
